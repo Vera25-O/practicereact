@@ -1,0 +1,10 @@
+
+h1{
+  text-align: center;
+  color: orange;
+}
+#root{
+  height: 570px;
+  width: 100%;
+  background-color:black;
+}
