@@ -93,6 +93,7 @@ body {
   .select-bar{
     background-color: rgb(222, 31, 149);
     height: 30px;
+    width: 25%;
   }
   
   
