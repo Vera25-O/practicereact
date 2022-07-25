@@ -49,9 +49,7 @@ function Shoe({
       <p>
         <strong>{description}</strong>
       </p>
-      <button onClick={markRead}>
-        {read ? "Mark as read" : "Mark as unread"}
-      </button>
+      <button onClick={markRead} className="like-button">Likes ♥</button>
 
       <button onClick={addToFavourite}>
         {favorite ? "Remove Favourite" : "Add Favourite"}
