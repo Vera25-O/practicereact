@@ -8,10 +8,7 @@ function ShoesContainer({ shoes, setShoes }) {
     setSelectedOption(e.target.value);
   }
 
-  function onDelete(id) {
-    const updated = shoes.filter((shoe) => shoe.id !== id);
-    setShoes(updated);
-  }
+  
 
   function updateShoes(data) {
     const updatedShoes = shoes.map((shoe) => {
@@ -37,11 +34,11 @@ function ShoesContainer({ shoes, setShoes }) {
         favorite={shoe.favourite}
         isRead={shoe.read}
         id={shoe.id}
-        title={shoe.name}
-        content={shoe.image}
-        author={shoe.description}
-        updatePoems={updateShoes}
-        onDelete={onDelete}
+        name={shoe.name}
+        image={shoe.image}
+        description={shoe.description}
+        updateShoes={updateShoes}
+        
       />
     );
   });

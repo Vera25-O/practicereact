@@ -8,21 +8,11 @@ function Shoe({
   image,
   favorite,
   updateShoes,
-  isRead,
-  onDelete,
+  isRead
 }) {
   const [read, setRead] = useState(isRead);
 
-  function handleDelete() {
-    fetch(`http://localhost:3000/poems/${id}`, {
-      method: "DELETE",
-    })
-      .then((response) => response.json())
-      .then(() => onDelete(id))
-
-      .catch((error) => console.log(error));
-  }
-
+ 
   function addToFavourite() {
     fetch(` http://localhost:3000/shoes/${id}`, {
       method: "PATCH",
@@ -55,7 +45,7 @@ function Shoe({
   return (
     <div id={id}>
       <h3>{name}</h3>
-      <p>{image}</p>
+      <img src={image} alt="shoe"/>
       <p>
         <strong>{description}</strong>
       </p>
@@ -67,7 +57,7 @@ function Shoe({
         {favorite ? "Remove Favourite" : "Add Favourite"}
       </button>
 
-      <button onClick={handleDelete}>DELETE</button>
+      
     </div>
   );
 }
