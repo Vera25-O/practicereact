@@ -54,10 +54,11 @@ body {
   button {
     font-weight: bold;
     font-size: 1em;
-    background: #04e8ff;
-    border: solid black 1px;
+    background: black;
+    border: solid gold 1px;
     padding: 0.5em;
     cursor: pointer;
+    color: gold;
   }
 
 

@@ -32,7 +32,6 @@ function ShoesContainer({ shoes, setShoes }) {
       <Shoe
         key={shoe.id}
         favorite={shoe.favourite}
-        isRead={shoe.read}
         id={shoe.id}
         name={shoe.name}
         image={shoe.image}

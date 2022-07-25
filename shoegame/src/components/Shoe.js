@@ -10,7 +10,11 @@ function Shoe({
   updateShoes,
   isRead
 }) {
-  const [read, setRead] = useState(isRead);
+  const [likes, setLikes] = useState(0);
+
+  function coutLikes(){
+    setLikes(likes + 1);
+  }
 
  
   function addToFavourite() {
@@ -28,19 +32,7 @@ function Shoe({
       .catch((error) => console.log(error));
   }
 
-  function markRead() {
-    fetch(` http://localhost:3000/shoes/${id}`, {
-      method: "PATCH",
-      headers: {
-        "Content-Type": "Application/json",
-        Accept: "Application/json",
-      },
-      body: JSON.stringify({ read: !read }),
-    })
-      .then((response) => response.json())
-      .then((data) => setRead(!read))
-      .catch((error) => console.log(error));
-  }
+  
 
   return (
     <div id={id}>
@@ -49,7 +41,7 @@ function Shoe({
       <p>
         <strong>{description}</strong>
       </p>
-      <button onClick={markRead} className="like-button">Likes ♥</button>
+      <button onClick={coutLikes} className="like-button">Likes {likes} ♥</button>
 
       <button onClick={addToFavourite}>
         {favorite ? "Remove Favourite" : "Add Favourite"}
