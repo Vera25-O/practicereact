@@ -52,7 +52,7 @@ function NewShoeForm({ updateShoes }) {
       <textarea
         value={newData.image}
         name="image"
-        placeholder="Post your shoe here..."
+        placeholder="Put your shoe url here..."
         rows={10}
         onChange={doChange}
       />
