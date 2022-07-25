@@ -44,7 +44,7 @@ function ShoesContainer({ shoes, setShoes }) {
 
   return (
     <div className="shoes-container">
-      <select onChange={handleSelect} value={selectedOption}>
+      <select onChange={handleSelect} value={selectedOption} className="select">
         <option value="All">All Shoes</option>
         <option value="favourite">Favorites</option>
       </select>
