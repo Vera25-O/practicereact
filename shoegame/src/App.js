@@ -3,7 +3,7 @@ import ShoesContainer from "./components/ShoesContainer";
 import NewShoeForm from "./components/NewShoeForm";
 
 function App() {
-  const [isDisplayed, setIsDisplayed] = useState(true);
+ 
   const [shoes, setShoes] = useState([]);
 
   useEffect(() => {
@@ -12,9 +12,7 @@ function App() {
       .then((shoes) => setShoes(shoes));
   }, []);
 
-  const formDisplay = () => {
-    setIsDisplayed(!isDisplayed);
-  };
+  
 
   function upDateShoes(shoe) {
     setShoes([...shoes, shoe]);
@@ -23,7 +21,7 @@ function App() {
   return (
     <div className="app">
       <div className="sidebar">
-        <button onClick={formDisplay}>Show/hide new shoe form</button>
+       
         {isDisplayed ? <NewShoeForm updateShoes={upDateShoes} /> : null}
       </div>
       <ShoesContainer shoes={shoes} setShoes={setShoes} />
