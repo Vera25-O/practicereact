@@ -1,26 +1,33 @@
-import Login from "./components/Login";
+import { useState, useEffect } from "react";
+import ShoesContainer from "./components/ShoesContainer";
+import NewShoeForm from "./components/NewShoeForm"
 
 function App() {
+  const [isDisplayed, setIsDisplayed] = useState(true);
+  const [shoes, setShoes] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:3000/poems")
+      .then((response) => response.json())
+      .then((poems) => setPoems(poems));
+  }, []);
+
+  const formDisplay = () => {
+    setIsDisplayed(!isDisplayed);
+  };
+
+  function upDateShoes(shoe) {
+    setShoes([...shoes, shoe]);
+  }
+
   return (
-    <body className="App">
-      <h1>SHOEGAME</h1>
-      <switch>
-      <Login/>
-      </switch>
-
-      <switch>
-      <Home/>
-        </switch>
-
-        <switch>
-        <About/>
-        </switch>
-
-        <switch>
-        <Shoes/>
-        </switch>
-     
-    </body>
+    <div className="app">
+      <div className="sidebar">
+        <button onClick={formDisplay}>Show/hide new shoe form</button>
+        {isDisplayed ? <NewShoeForm updateShoes={upDateShoes} /> : null}
+      </div>
+      <ShoesContainer shoes={shoes} setShoes={setShoes} />
+    </div>
   );
 }
 
