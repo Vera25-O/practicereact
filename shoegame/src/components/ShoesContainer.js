@@ -1,5 +1,5 @@
-import Shoe from "./components/Shoe";
 import React, { useState } from "react";
+import Shoe from "./Shoe";
 
 function ShoesContainer({ shoes, setShoes }) {
   const [selectedOption, setSelectedOption] = useState("All");
@@ -23,7 +23,7 @@ function ShoesContainer({ shoes, setShoes }) {
     setShoes(updatedShoes);
   }
 
-  const filteredShoes = Shoes.filter((shoe) => {
+  const filteredShoes = shoes.filter((shoe) => {
     if (selectedOption === "All") {
       return shoe;
     }

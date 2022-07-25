@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import ShoesContainer from "./components/ShoesContainer";
-import NewShoeForm from "./components/NewShoeForm"
+import NewShoeForm from "./components/NewShoeForm";
 
 function App() {
   const [isDisplayed, setIsDisplayed] = useState(true);
@@ -9,7 +9,7 @@ function App() {
   useEffect(() => {
     fetch(" http://localhost:3000/shoes")
       .then((response) => response.json())
-      .then((poems) => setPoems(poems));
+      .then((shoes) => setShoes(shoes));
   }, []);
 
   const formDisplay = () => {

@@ -25,7 +25,7 @@ function NewShoeForm({ updateShoes }) {
       })
         .then((response) => response.json())
         .then((data) => {
-          updatePoems(data);
+          updateShoes(data);
           setNewData({ ...newData, name: "", description: "", image: "" });
         });
     }

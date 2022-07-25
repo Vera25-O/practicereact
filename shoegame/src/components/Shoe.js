@@ -33,7 +33,7 @@ function Shoe({
       body: JSON.stringify({ favourite: !favorite }),
     })
       .then((response) => response.json())
-      .then((data) => updatePoems(data))
+      .then((data) => updateShoes(data))
 
       .catch((error) => console.log(error));
   }
