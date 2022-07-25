@@ -22,7 +22,7 @@ function App() {
     <div className="app">
       <div className="sidebar">
        
-        {isDisplayed ? <NewShoeForm updateShoes={upDateShoes} /> : null}
+        {true? <NewShoeForm updateShoes={upDateShoes} /> : null}
       </div>
       <ShoesContainer shoes={shoes} setShoes={setShoes} />
     </div>
