@@ -11,11 +11,12 @@ body {
   }
   
   .sidebar {
+    
     min-height: 100vh;
     min-width: 12em;
     width: 28%;
     border-right: solid black 1px;
-    background: goldenrod;
+    background: rgb(222, 31, 149);
     padding: 1em;
   }
   
