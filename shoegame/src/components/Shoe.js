@@ -24,7 +24,7 @@ function Shoe({
   }
 
   function addToFavourite() {
-    fetch(`http://localhost:8004/poems/${id}`, {
+    fetch(` http://localhost:3000/shoes/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "Application/json",
@@ -39,7 +39,7 @@ function Shoe({
   }
 
   function markRead() {
-    fetch(`http://localhost:3000/poems/${id}`, {
+    fetch(` http://localhost:3000/shoes/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "Application/json",

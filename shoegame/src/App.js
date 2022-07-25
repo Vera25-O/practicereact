@@ -7,7 +7,7 @@ function App() {
   const [shoes, setShoes] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/poems")
+    fetch(" http://localhost:3000/shoes")
       .then((response) => response.json())
       .then((poems) => setPoems(poems));
   }, []);

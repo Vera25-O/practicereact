@@ -16,7 +16,7 @@ function NewShoeForm({ updateShoes }) {
     ) {
       alert("Please input all fields");
     } else {
-      fetch("http://localhost:3000/poems", {
+      fetch(" http://localhost:3000/shoes", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
