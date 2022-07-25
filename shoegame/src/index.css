@@ -93,7 +93,7 @@ body {
   .select-bar{
     background-color: rgb(222, 31, 149);
     height: 35px;
-    width: 30%;
+    width: 10%;
     position: fixed;
     font-size: larger;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
