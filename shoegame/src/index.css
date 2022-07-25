@@ -27,7 +27,7 @@ body {
   }
   
   .shoes-container > div {
-    border-bottom: solid 1px grey;
+    border-bottom: solid 1px gold;
     padding-bottom: 1em;
     min-width: 20em;
   }
