@@ -89,5 +89,9 @@ body {
   .like-button:focus {
     outline: none;
   }
+
+  .select-bar{
+    background-color: rgb(193, 44, 166);
+  }
   
   
