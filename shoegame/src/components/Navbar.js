@@ -14,13 +14,13 @@ const Navbar = () => {
                   to="/"
                   
                 >
-                    <button>Home</button>
+                    <button className="btn">Home</button>
                 </NavLink>
                 <NavLink 
                   to="/about"
                   
                 >
-                    <button>About</button>
+                    <button className="btn">About</button>
                 </NavLink>
                 
                
@@ -28,7 +28,7 @@ const Navbar = () => {
                   to="/posts"
                   
                 >
-                    <button>Posts</button>
+                    <button className="btn">Posts</button>
                 </NavLink>
                 
             

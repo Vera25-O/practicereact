@@ -17,6 +17,7 @@ body {
 }
 
 a {
+  
   margin-right: 5%;
 }
 
@@ -111,4 +112,14 @@ button {
   margin-left: 5%;
   font-size: larger;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.btn{
+  width: 180%;
+}
+
+
+h1{
+  color: rgb(236, 57, 191);
 }
