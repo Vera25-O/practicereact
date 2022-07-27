@@ -9,7 +9,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-right: 5%;
+  
 }
 
 .about {
@@ -116,10 +116,11 @@ button {
 
 
 .btn{
-  width: 180%;
+  width: 140%;
 }
 
 
 h1{
   color: rgb(236, 57, 191);
+  font-size: 400%;
 }
