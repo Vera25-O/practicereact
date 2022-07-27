@@ -8,7 +8,7 @@ function Shoe({
   image,
   favorite,
   updateShoes,
-  isRead
+  
 }) {
   const [likes, setLikes] = useState(0);
 

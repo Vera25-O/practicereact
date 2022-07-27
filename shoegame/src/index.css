@@ -14,6 +14,7 @@ body {
 
 .about {
   text-align: center;
+  line-height: 40px;
 }
 
 a {
@@ -118,6 +119,7 @@ button {
 .btn{
   width: 140%;
 }
+
 
 
 h1{

@@ -56,7 +56,7 @@ function NewShoeForm({ updateShoes }) {
         rows={10}
         onChange={doChange}
       />
-      <input type="submit" value="Share your shoe" />
+      <input type="submit" value="Post your shoe" />
     </form>
   );
 }
