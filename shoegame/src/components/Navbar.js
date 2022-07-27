@@ -4,7 +4,7 @@ import React from "react";
 
 const Navbar = () => {
     return (
-        <>
+        <div className="nav">
            
            
             
@@ -12,32 +12,28 @@ const Navbar = () => {
             
                 <NavLink 
                   to="/"
-                  activeStyle={{ color:'black' }}
+                  
                 >
-                    Home
+                    <button>Home</button>
                 </NavLink>
                 <NavLink 
                   to="/about"
-                  activeStyle={{ color: 'black' }}
+                  
                 >
-                    About
+                    <button>About</button>
                 </NavLink>
+                
+               
                 <NavLink 
-                  to="/contact" 
-                  activeStyle={{ color: 'black' }}
+                  to="/posts"
+                  
                 >
-                    Contact
-                </NavLink>
-                <NavLink
-                  to="/login"
-                  activeStyle={{ color: 'black' }}
-                >
-                    Login
+                    <button>Posts</button>
                 </NavLink>
                 
             
            
-        </>
+        </div>
     );
 };
-export default Navbar
+export default Navbar;
