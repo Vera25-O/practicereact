@@ -16,12 +16,7 @@ const Navbar = () => {
                 >
                     <button className="btn">Home</button>
                 </NavLink>
-                <NavLink 
-                  to="/about"
-                  
-                >
-                    <button className="btn">About</button>
-                </NavLink>
+                
                 
                
                 <NavLink 
@@ -31,7 +26,12 @@ const Navbar = () => {
                     <button className="btn">Posts</button>
                 </NavLink>
                 
-            
+                <NavLink 
+                  to="/new"
+                  
+                >
+                    <button className="btn">Add Shoe</button>
+                </NavLink>
            
         </div>
     );

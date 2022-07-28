@@ -16,7 +16,7 @@ function NewShoeForm({ updateShoes }) {
     ) {
       alert("Please input all fields");
     } else {
-      fetch(" http://localhost:3000/shoes", {
+      fetch("https://morning-stream-44230.herokuapp.com/shoes", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -36,28 +36,29 @@ function NewShoeForm({ updateShoes }) {
   }
 
   return (
+    <div className="sidebar">
     <form className="new-shoe-form" onSubmit={onSubmission}>
       <input
-        value={newData.title}
+        value={newData.name}
         name="name"
         placeholder="Name"
         onChange={doChange}
       />
       <input
-        value={newData.author}
+        value={newData.description}
         name="description"
         placeholder="Description"
         onChange={doChange}
       />
-      <textarea
+      <input
         value={newData.image}
         name="image"
-        placeholder="Put your shoe url here..."
-        rows={10}
+        placeholder="Put your shoe image url here..."
         onChange={doChange}
       />
       <input type="submit" value="Post your shoe" />
     </form>
+    </div>
   );
 }
 
