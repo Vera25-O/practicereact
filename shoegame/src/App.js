@@ -34,9 +34,9 @@ function App() {
       
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-         <Route path="/posts" element={<Posts  shoes={shoes} setShoes={setShoes}/>} />
-         <Route path="/new" element={<NewShoeForm updateShoes={upDateShoes}/>} />
+        <Route exact path="/" element={<Home />} />
+         <Route exact path="/posts" element={<Posts  shoes={shoes} setShoes={setShoes}/>} />
+         <Route exact path="/new" element={<NewShoeForm updateShoes={upDateShoes}/>} />
       </Routes>
    
      

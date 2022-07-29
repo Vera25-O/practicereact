@@ -12,6 +12,7 @@ const Navbar = () => {
             
                 <NavLink 
                   to="/"
+                  exact="true"
                   
                 >
                     <button className="btn">Home</button>
@@ -21,14 +22,14 @@ const Navbar = () => {
                
                 <NavLink 
                   to="/posts"
-                  
+                  exact="true"
                 >
                     <button className="btn">Posts</button>
                 </NavLink>
                 
                 <NavLink 
                   to="/new"
-                  
+                  exact="true"
                 >
                     <button className="btn">Add Shoe</button>
                 </NavLink>
